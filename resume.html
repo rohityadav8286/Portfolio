@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            background: #0786ad;
+            color: white;
+        }
+        .sidebar {
+            width: 250px;
+            background: #2f4f4f;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .main-content {
+            padding: 50px;
+            flex: 1;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .highlight {
+            background: rgb(0, 107, 128);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .developer {
+            text-decoration: underline;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:first-of-type {
+            background: white;
+            color: #2f4f4f;
+        }
+        .btn:last-of-type {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* Projects Section */
+        .projects {
+            margin-top: 30px;
+        }
+        .project-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            color: black;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #444;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: teal;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="WhatsApp Image 2025-02-25 at 09.58.52.jpeg" alt="Profile Picture">
+        <ul>
+            <li>📄 About</li>
+            <li>💼 Experience</li>
+            <li>📁 Projects</li>
+            <li>📊 Skills</li>
+            <li>🎓 Education</li>
+            <li>📧 Contact</li>
+            <li>📂 Resume</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Hi, I'm <span class="highlight">ROHIT YADAV</span>.</h1>
+        <h2>A <span class="developer">Developer</span></h2>
+        <p>Self-driven, quick starter, passionate programmer with a curious mind 
+            who enjoys solving complex and challenging real-world problems.</p>
+
+        <div class="social-links">
+            <a href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.WbP2N4M5QjG24ntMED-G0wHaHa&pid=Api&P=0&h=220" alt="LinkedIn"></a>
+            <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK&pid=Api&P=0&h=220" alt="GitHub"></a>
+        </div>
+
+        <button class="btn">Read More</button>
+        <button class="btn">Contact Me</button>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/IeyLJHH1SexIEtUartgak6pq_w8we2ydPTF12reS2Kk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kb2Nz/Ym90LmFpL19uZXh0/L2ltYWdlP3VybD0v/aW1hZ2VzL29nL3lv/dXR1YmUtc3VtbWFy/aXplLnBuZyZ3PTgy/OCZxPTc1.jpeg" alt="Video Summarizer">
+                    <div class="card-content">
+                      <div class="card-title">Video Summarizer</div>
+                      <div class="card-description">A Seq2Seq model summarizing input videos.</div>
+                    </div>
+                  </div>
+                <div class="card">
+                    <img src="https://varadbhogayata.github.io/assets/img/project-blog-logo.jpg" alt="Blog Web-App">
+                    <div class="card-content">
+                      <div class="card-title">Blog Web-App</div>
+                      <div class="card-description">A simple and extensible blog web app based on Flask.</div>
+                    </div>
+                  </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/wIAP9jzpDtBv6w9L6A6-WDx7ksh6ecGbekxqb6r59qw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/am90Zm9ybS5jb20v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wMS9pbWFn/ZS1xdWl6LWFwcC10/ZW1wbGF0ZS5wbmc" alt="Quiz Web-App">
+                    <div class="card-content">
+                      <div class="card-title">Quiz Web-App</div>
+                      <div class="card-description">A quiz playing web app based on Django.</div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
